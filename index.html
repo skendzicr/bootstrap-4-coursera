@@ -35,13 +35,20 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-8">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking
                         creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid" alt="">
+                    <div class="row  align-items-center">
+                        <div class="col-6">
+                            <img src="img/logo.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-6">
+                            <a href="#reserveTable" class="btn btn-sm btn-block btn-warning">Reserve table</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,10 +76,15 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p class="hidden-xs-down"> Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six
-                    main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per
-                    person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger">New</span></h2>
+                        <p class="hidden-xs-down"> Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers,
+                            six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just
+                            $19.99 per person </p>
+                    </div>
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Weekend Grand Buffet">
+                </div>
             </div>
         </div>
 
@@ -93,6 +105,82 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-sm"></div>
+            <div class="col-12 col-sm-8">
+                <div id="reserveTable" class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a table</h3>
+                    <div class="card-block">
+                        <form action="">
+                            <div class="form-group row">
+                                <div class="col">Number of guests</div>
+                                <div class="col-12 col-sm-10">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                                                </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                                                </label>
+                                    </div>
+                                    <div class="form-check form-check-inline disabled">
+                                        <label class="form-check-label">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+                                                </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> 4
+                                                </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5"> 5
+                                                </label>
+                                    </div>
+                                    <div class="form-check form-check-inline disabled">
+                                        <label class="form-check-label">
+                                                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6"> 6
+                                                </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">Date and time</div>
+                                <div class="col-12 col-sm-5">
+                                    <label class="sr-only" for="inlineFormInputGroup">Date</label>
+                                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                        <div class="input-group-addon">
+                                            <span class="fa fa-calendar"></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Date">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-5">
+                                    <label class="sr-only" for="inlineFormInputGroup">Time</label>
+                                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                        <div class="input-group-addon">
+                                            <span class="fa fa-clock-o"></span>
+                                        </div>
+                                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Time">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col"></div>
+                                <div class="col-12 col-sm-10">
+                                    <button type="submit" class="btn btn-primary">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm"></div>
         </div>
     </div>
 
